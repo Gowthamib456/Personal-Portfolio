@@ -65,15 +65,19 @@ header {
 .hero p {
     max-width: 650px;
     margin: 10px auto;
+    padding: 0 8px;
+    overflow-wrap: break-word;
 }
 
 .hero h1 {
     color: #20d3d2;
-    font-size: clamp(36px, 6vw, 56px);
+    font-size: clamp(32px, 7vw, 56px);
+    overflow-wrap: break-word;
 }
 
 .hero h2 {
-    font-size: 25px;
+    font-size: clamp(20px, 4vw, 25px);
+    overflow-wrap: break-word;
 }
 
 .btn {
@@ -202,14 +206,30 @@ footer {
 }
 
 /* Tablet and mobile layout */
+
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .nav-links {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 10px 16px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 5px 0;
     }
 
     .project-container {
@@ -219,7 +239,13 @@ footer {
     .hero {
         padding: 60px 20px;
     }
+
+    .section {
+        padding: 40px 16px;
+    }
+
 }
+
 
 /* Education and career cards */
 .education-card,
@@ -299,3 +325,112 @@ footer {
     background: #087f8c;
     color: white;
 }
+
+/* Keep all main sections inside the screen */
+header,
+.navbar,
+.hero,
+.section,
+footer {
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Fix hero text and buttons */
+.hero {
+    text-align: center;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.hero h2 {
+    font-size: clamp(18px, 5vw, 25px);
+}
+
+
+/* Responsive layout for mobile phones */
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 12px 8px;
+        gap: 12px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 45px 16px;
+    }
+
+    .hero h1 {
+        font-size: clamp(28px, 8vw, 34px);
+    }
+
+    .hero h2 {
+        font-size: clamp(17px, 5vw, 21px);
+    }
+
+    .hero p {
+        max-width: 100%;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .btn {
+        margin: 10px 3px 0;
+        padding: 10px 12px;
+    }
+
+    .section {
+        padding: 35px 16px;
+    }
+
+    .project-container,
+    .skills-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-card,
+    .skill-card,
+    .education-card,
+    .career-card {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    input,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+        .hero h2 {
+        line-height: 1.4;
+        max-width: 100%;
+    }
+
+    .hero .btn {
+        max-width: 100%;
+        white-space: normal;
+    }
+}
+
+
