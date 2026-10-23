@@ -217,3 +217,25 @@ footer {
         padding: 60px 20px;
     }
 }
+
+/* Education and career cards */
+.education-card,
+.career-card {
+    background: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #087f8c;
+    box-shadow: 0 4px 15px #172b4d12;
+}
+
+.education-card h3,
+.career-card h3 {
+    color: #087f8c;
+    margin-bottom: 10px;
+}
+
+.education-card p,
+.career-card p {
+    margin-bottom: 8px;
+}
