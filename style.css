@@ -433,4 +433,51 @@ footer {
     }
 }
 
+/* Scroll-to-top button */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #087f8c;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
+#scrollTopBtn:hover {
+    background: #075b66;
+}
+
+#scrollTopBtn:focus-visible {
+    outline: 3px solid #20d3d2;
+    outline-offset: 3px;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: #087f8c;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#scrollTopBtn:hover {
+    background: #075b66;
+}
