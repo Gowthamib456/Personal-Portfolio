@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">My Portfolio</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1. Home Section -->
+    <section id="home" class="hero">
+        <p>Hello, I'm</p>
+        <h1>Gowthami B</h1>
+        <h2>Aspiring Software Developer</h2>
+        <p>I'm a computer science student passionate about
+           programming, and web development.</p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science and Engineering student interested
+            in software development, web technologies, and cloud computing.
+            I enjoy learning new technologies and building practical projects.
+        </p>
+        <p><strong>Education:</strong> B.E. in Computer Science and Engineering</p>
+        <p><strong>Career Goal:</strong> To become a skilled Full stack Web Developer.</p>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>Git & GitHub</span>
+        
+        </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+            <article class="project-card">
+                <h3>Online Library Management System</h3>
+                <p>A system for managing books, library records,
+                   and borrowing information.</p>
+                <p><strong>Technologies:</strong> Java, MySQL</p>
+            </article>
+
+            <article class="project-card">
+                <h3>Resume Analyzer</h3>
+                <p>A project designed to analyse resumes and
+                   compare candidate skills with job requirements.</p>
+                <p><strong>Technologies:</strong> Java, MySQL</p>
+            </article>
+
+            <article class="project-card">
+                <h3>MediScan</h3>
+                <p>A medical imaging project exploring the
+                   integration of scan images and clinical information.</p>
+                <p><strong>Technologies:</strong> Python, AI</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>I'd love to connect and learn about new opportunities.</p>
+
+        <form id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name"
+                   required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email"
+                   required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>
+            <a href="https://github.com/Gowthamib456"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            |
+            <a href="https://www.linkedin.com/in/gowthami-b-5130aa2a7?"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name | Personal Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
