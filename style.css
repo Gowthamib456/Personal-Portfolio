@@ -132,18 +132,21 @@ header {
     gap: 20px;
 }
 
+
 .project-card {
-    background: white;
+    background: #ffffff;
     padding: 24px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px #172b4d12;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     border: 1px solid #e2e8f0;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
+
 
 .project-card h3 {
     color: #087f8c;
