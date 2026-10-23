@@ -1,8 +1,19 @@
-
 # Personal Portfolio Website
 
-## About
-This is my personal portfolio website, developed as part of my internship task to practise core web technologies.
+## About the Project
+This is my personal portfolio website, developed using HTML, CSS, and JavaScript to showcase my education, technical skills, projects, and contact information.
+
+## Live Website
+Visit my portfolio: https://gowthamib456.github.io/Personal-Portfolio/
+
+## Features
+- Responsive design for desktop and mobile devices
+- About Me and Education sections
+- Technical Skills section
+- Project cards with GitHub repository links
+- Contact form with required-field and email-format validation
+- Scroll-to-top navigation button
+- Smooth scrolling and interactive elements
 
 ## Technologies Used
 - HTML5
@@ -11,33 +22,23 @@ This is my personal portfolio website, developed as part of my internship task t
 - Git and GitHub
 - GitHub Pages
 
-## Portfolio Sections
-- Home
-- About Me
-- Skills
-- Projects
-- Contact
+## Projects Featured
+1. **MediScan** — Clinical Context Integration in Medical Imaging
+   - GitHub: https://github.com/Gowthamib456/MediScan
 
-## Projects
-### Online Library Management System
-A project for managing library books and borrowing records.
+2. **Online Library Management System**
+   - GitHub: https://github.com/Gowthamib456/Online_Library
 
-### Resume Analyzer
-A project designed to analyse resumes and compare skills with job requirements.
-
-### MediScan
-A medical imaging project exploring the integration of scan images and clinical information.
-
-## Live Website
-https://gowthamib456.github.io/Personal-Portfolio/
-
-## Repository
-https://github.com/Gowthamib456/Personal-Portfolio
+3. **Resume Analyzer**
+   - GitHub: https://github.com/Gowthamib456/Resume_Analyzer
 
 ## How to Run Locally
-1. Clone this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open index.html using the Live Server extension.
+1. Clone this repository:
+   `git clone https://github.com/Gowthamib456/Personal-Portfolio.git`
+2. Open the project folder in VS Code.
+3. Open `index.html` using the Live Server extension.
 
-## Author
-Gowthami B.
+## Contact
+**Gowthami B.**
+
+This portfolio was created as part of my web development learning and internship preparation.
