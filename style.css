@@ -239,3 +239,60 @@ footer {
 .career-card p {
     margin-bottom: 8px;
 }
+
+/* Technical skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.skill-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #dce5ee;
+    border-bottom: 4px solid #087f8c;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #172b4d15;
+}
+
+.skill-card h3 {
+    color: #087f8c;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project repository links */
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 14px;
+    color: #087f8c;
+    border: 1px solid #087f8c;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.project-link:hover {
+    background: #087f8c;
+    color: white;
+}
